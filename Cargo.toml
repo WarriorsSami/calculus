@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "calculus_lib",
+    "lab1",
+    "lab1_3", "lab1_4", "lab2_1",
+]
