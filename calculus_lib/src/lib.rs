@@ -73,6 +73,38 @@ impl Matrix {
     pub fn set(&mut self, i: usize, j: usize, value: f64) {
         self.data[i][j] = value;
     }
+
+    pub fn swap_rows(&mut self, i: usize, j: usize) {
+        self.data.swap(i, j);
+    }
+
+    pub fn swap_columns(&mut self, i: usize, j: usize) {
+        for row in &mut self.data {
+            row.swap(i, j);
+        }
+    }
+
+    pub fn get_row_of_max_col_pivot(&self, k: usize) -> usize {
+        let mut max = k;
+        for i in k + 1..=self.n() {
+            if self.at(i, k).abs() > self.at(max, k).abs() {
+                max = i;
+            }
+        }
+        max
+    }
+
+    pub fn get_row_col_of_max_matrix_pivot(&self, k: usize) -> (usize, usize) {
+        let mut max = (k, k);
+        for i in k..=self.n() {
+            for j in k..=self.m() {
+                if self.at(i, j).abs() > self.at(max.0, max.1).abs() {
+                    max = (i, j);
+                }
+            }
+        }
+        max
+    }
 }
 
 impl std::fmt::Display for Matrix {
