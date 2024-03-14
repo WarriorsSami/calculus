@@ -40,3 +40,49 @@ pub fn solve_polynomial(a: Vec<f64>, x: f64) -> f64 {
         acc + ai * x.powi((a.len() - 1 - i) as i32)
     })
 }
+
+#[derive(Debug)]
+pub struct Matrix {
+    data: Vec<Vec<f64>>,
+}
+
+impl Matrix {
+    pub fn new(data: Vec<Vec<f64>>) -> Self {
+        // prepend 0.0 to each row and column
+        let mut data = data;
+        for row in &mut data {
+            row.insert(0, 0.0);
+        }
+        data.insert(0, vec![0.0; data[0].len()]);
+
+        Self { data }
+    }
+
+    pub fn n(&self) -> usize {
+        self.data.len() - 1
+    }
+
+    pub fn m(&self) -> usize {
+        self.data[0].len() - 1
+    }
+
+    pub fn at(&self, i: usize, j: usize) -> f64 {
+        self.data[i][j]
+    }
+
+    pub fn set(&mut self, i: usize, j: usize, value: f64) {
+        self.data[i][j] = value;
+    }
+}
+
+impl std::fmt::Display for Matrix {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        for i in 1..=self.n() {
+            for j in 1..=self.m() {
+                write!(f, "{:.2} ", self.at(i, j))?;
+            }
+            writeln!(f)?;
+        }
+        Ok(())
+    }
+}
