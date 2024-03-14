@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lab1_3/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab1_4/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab2_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab2_2/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/calculus_lib/target" />
       <excludeFolder url="file://$MODULE_DIR$/lab1/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />

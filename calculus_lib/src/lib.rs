@@ -33,3 +33,10 @@ pub fn solve_quadratic_equation(a: f64, b: f64, c: f64) -> (Solution, Solution) 
         }
     }
 }
+
+// p(x) = a[0] * x^n + a[1] * x^(n-1) + ... + a[n-1] * x + a[n]
+pub fn solve_polynomial(a: Vec<f64>, x: f64) -> f64 {
+    a.iter().enumerate().fold(0.0, |acc, (i, &ai)| {
+        acc + ai * x.powi((a.len() - 1 - i) as i32)
+    })
+}
