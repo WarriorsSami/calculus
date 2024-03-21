@@ -79,6 +79,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "lab4_1"
+version = "0.1.0"
+dependencies = [
+ "calculus_lib",
+]
+
+[[package]]
+name = "lab4_2"
+version = "0.1.0"
+dependencies = [
+ "calculus_lib",
+]
+
+[[package]]
+name = "lab5_1"
+version = "0.1.0"
+dependencies = [
+ "calculus_lib",
+]
+
+[[package]]
 name = "num"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
