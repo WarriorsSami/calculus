@@ -58,6 +58,14 @@ impl Matrix {
         Self { data }
     }
 
+    pub fn identity(n: usize) -> Self {
+        let mut data = vec![vec![0.0; n + 1]; n + 1];
+        for i in 1..=n {
+            data[i][i] = 1.0;
+        }
+        Self { data }
+    }
+
     pub fn n(&self) -> usize {
         self.data.len() - 1
     }
@@ -98,6 +106,18 @@ impl Matrix {
         let mut max = (k, k);
         for i in k..=self.n() {
             for j in k..=self.m() {
+                if self.at(i, j).abs() > self.at(max.0, max.1).abs() {
+                    max = (i, j);
+                }
+            }
+        }
+        max
+    }
+
+    pub fn get_row_col_of_matrix_pivot_in_bounds(&self, k: usize, n: usize, m: usize) -> (usize, usize) {
+        let mut max = (k, k);
+        for i in k..=n {
+            for j in k..=m {
                 if self.at(i, j).abs() > self.at(max.0, max.1).abs() {
                     max = (i, j);
                 }
