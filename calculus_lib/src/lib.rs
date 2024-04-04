@@ -114,7 +114,12 @@ impl Matrix {
         max
     }
 
-    pub fn get_row_col_of_matrix_pivot_in_bounds(&self, k: usize, n: usize, m: usize) -> (usize, usize) {
+    pub fn get_row_col_of_matrix_pivot_in_bounds(
+        &self,
+        k: usize,
+        n: usize,
+        m: usize,
+    ) -> (usize, usize) {
         let mut max = (k, k);
         for i in k..=n {
             for j in k..=m {

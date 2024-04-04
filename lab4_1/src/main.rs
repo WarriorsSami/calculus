@@ -17,7 +17,10 @@ fn main() {
                 A.set(i, k, A.at(i, k) / A.at(k, k));
             }
         } else {
-            println!("Cannot continue factorization: zero pivot found at A[{}, {}]", k, k);
+            println!(
+                "Cannot continue factorization: zero pivot found at A[{}, {}]",
+                k, k
+            );
         }
     }
 

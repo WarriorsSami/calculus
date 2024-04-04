@@ -2,5 +2,5 @@
 members = [
     "calculus_lib",
     "lab1",
-    "lab1_3", "lab1_4", "lab2_1", "lab2_2", "lab3_1", "lab3_2", "lab3_3", "lab4_1", "lab4_2", "lab5_1", "lab6_1", "lab6_2", "lab6_3",
+    "lab1_3", "lab1_4", "lab2_1", "lab2_2", "lab3_1", "lab3_2", "lab3_3", "lab4_1", "lab4_2", "lab5_1", "lab6_1", "lab6_2", "lab6_3", "lab7_1", "lab7_2",
 ]

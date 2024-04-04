@@ -46,5 +46,3 @@ fn main() {
 
     println!("{}", A);
 }
-
-

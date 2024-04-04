@@ -14,6 +14,10 @@
       <sourceFolder url="file://$MODULE_DIR$/lab4_1/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab4_2/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab5_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab6_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab6_2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab6_3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab7_1/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/calculus_lib/target" />
       <excludeFolder url="file://$MODULE_DIR$/lab1/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />

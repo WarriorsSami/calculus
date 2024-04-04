@@ -16,7 +16,10 @@ fn main() {
                 A.set(i, k, 0.0);
             }
         } else {
-            println!("Cannot triangulate matrix: zero on diagonal at ({}, {})", k, k);
+            println!(
+                "Cannot triangulate matrix: zero on diagonal at ({}, {})",
+                k, k
+            );
             break;
         }
     }

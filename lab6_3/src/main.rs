@@ -69,7 +69,7 @@ fn _multiply_matrices(a: Vec<Vec<f64>>, b: Vec<Vec<f64>>) -> Vec<Vec<f64>> {
 
 fn main() {
     let mut matrix: Vec<Vec<f64>> = vec![
-       vec![2.0, 2.0, 3.0],
+        vec![2.0, 2.0, 3.0],
         vec![4.0, 5.0, 6.0],
         vec![1.0, 2.0, 2.0],
     ];
